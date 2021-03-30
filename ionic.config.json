@@ -1,0 +1,7 @@
+{
+  "name": "lms-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
