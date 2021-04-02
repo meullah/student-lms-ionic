@@ -7,7 +7,7 @@ import { Tab3Page } from './tab3.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab3PageRoutingModule } from './tab3-routing.module';
-
+import { KeysPipe } from './customPipe';
 @NgModule({
   imports: [
     IonicModule,
@@ -17,6 +17,6 @@ import { Tab3PageRoutingModule } from './tab3-routing.module';
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
   ],
-  declarations: [Tab3Page]
+  declarations: [Tab3Page, KeysPipe],
 })
 export class Tab3PageModule {}

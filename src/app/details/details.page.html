@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" routerLink="/tabs/tab3"
+      ><ion-icon size="large" color="primary" name="chevron-back"></ion-icon>
+    </ion-button>
+    <ion-title color="primary">Student Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let item of details | keys">
+    <ion-text slot="start" color="primary">{{item.key}} :</ion-text>
+    <ion-text slot="end">{{item.value}}</ion-text>
+  </ion-item>
+</ion-content>
